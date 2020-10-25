@@ -358,4 +358,9 @@ p {
   z-index: 1;
   width: 100%;
 }
+
+.more-story img {
+  width: 95px;
+  height: 95px;
+}
 /*# sourceMappingURL=style.css.map */
