@@ -1,199 +1,340 @@
 $bg-navbar: #f72210;
 $btn-subscribe: #ffe400;
 $body-color: #f4f5f6;
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Roboto", sans-serif;
-	background-color: $body-color;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: $body-color;
+  line-height: 24px;
 }
 
-.parent {
-	height: 200vh;
-	z-index: 100;
+p {
+	font-size: 13px;
+	font-family: arial;
+	color: #333;
+	line-height: 18px;
 }
+
 
 .info {
-	background-color: $bg-navbar;
+  background-color: $bg-navbar;
 }
 
 // ************* header
 .header {
-	z-index: 100;
+  z-index: 100;
 }
 
 .fixed--nav {
-	display: none;
-	justify-content: space-between;
+  display: none;
+  justify-content: space-between;
 }
 
-.main-nav, .fixed--nav {
-	height: 45px;
+.main-nav,
+.fixed--nav {
+  height: 45px;
 }
 
 .clouds {
-	width: 24px;
-	height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .weather {
-	font-size: 14px;
+  font-size: 14px;
 }
 
-.navbar-brand svg {
-	display: block;
-	width: 145px;
-	height: 60px;
-	margin-right: 15px;
-	margin-bottom: 12px;
-	fill: #fff;
+.logo {
+  height: 30px;
+}
+
+.newsweek-logo {
+  width: 145px;
+  height: 62px;
+  margin-right: 15px;
+  margin-bottom: 12px;
 }
 
 .btn-subs {
-	background-color: $btn-subscribe;
-	outline: none;
-	height: 28px;
-	font-size: 14px;
-	display: flex;
-	align-items: center;
-	width: 100px;
+  background-color: $btn-subscribe;
+  outline: none;
+  height: 28px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 100px;
 }
 
 // hamburger rotate animation from https://jonsuh.com/hamburgers/
 .hamburger {
-	padding: 10px 10px;
-	display: inline-block;
-	cursor: pointer;
-	transition-property: opacity, filter;
-	transition-duration: 0.15s;
-	transition-timing-function: linear;
-	color: inherit;
-	text-transform: none;
-	background-color: transparent;
-	border: 1px $bg-navbar;
-	margin: 0;
-	overflow: visible;
-	outline: none;
+  padding: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 1px $bg-navbar;
+  margin: 0;
+  overflow: visible;
+  outline: none;
 }
 
 .hamburger:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .hamburger.is-active:hover {
-	opacity: 0.7;
-}
-.hamburger:focus {
-	outline: none;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-	background-color: #fff;
+  opacity: 0.7;
 }
 
-.hamburger-box {
-	width: 21px;
-	height: 8px;
-	display: inline-block;
-	position: relative;
+.hamburger:focus {
+  outline: none;
 }
 
 .hamburger-inner {
-	display: block;
-	top: 20%;
-	margin-top: -2px;
+  display: block;
+  top: 20%;
+  margin-top: -2px;
 }
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-	width: 22px;
-	height: 2px;
-	background-color: #fff;
-	position: absolute;
-	transition-property: transform;
-	transition-duration: 0.15s;
-	transition-timing-function: ease;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
+
+.hamburger-inner::before {
+  top: -5px;
+}
+
+.hamburger-inner::after {
+  bottom: -5px;
+}
+
 .hamburger-inner::before,
 .hamburger-inner::after {
-	content: "";
-	display: block;
-}
-.hamburger-inner::before {
-	top: -5px;
-}
-.hamburger-inner::after {
-	bottom: -5px;
+  content: "";
+  display: block;
 }
 
 .hamburger--spin .hamburger-inner {
-	transition-duration: 0.22s;
-	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .hamburger--spin .hamburger-inner::before {
-	transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner::after {
-	transition: bottom 0.1s 0.25s ease-in,
-		transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .hamburger--spin.is-active .hamburger-inner {
-	transform: rotate(225deg);
-	transition-delay: 0.12s;
-	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hamburger--spin.is-active .hamburger-inner::before {
-	top: 0;
-	opacity: 0;
-	transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin.is-active .hamburger-inner::after {
-	bottom: 0;
-	transform: rotate(-90deg);
-	transition: bottom 0.1s ease-out,
-		transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-box {
+  width: 21px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
 }
 
 .navbar-side {
-  position:absolute;
-  top: 94px;
-  width:95%;
-  clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
-  background-color: #fff;
+  position: fixed;
+  width: 171px;
+  top: 46px;
+  right: 0;
+  transition: right 0.2s ease;
+  z-index: 998;
 }
+
 
 .division-line {
   position: absolute;
   height: 2px;
   background: #f4f5f6;
-  width:100%;
-  top:135px;
+  width: 100%;
+  top: 100px;
 }
 
 .navbar-side .nav-item:not(:last-of-type) {
-	position:relative;
-	margin-right: 1rem;
+  position: relative;
+  margin-right: 1rem;
 }
 
 .navbar-side .nav-item::before {
-	content: '';
-	position:absolute;
-	top: 11px;
-    right: -9px;
+  content: '\203A';
+  position: absolute;
+  top: 11px;
+  right: -9px;
+  height: 18px;
+  width: 1px;
+}
+
+.navbar-side .nav-link {
+  font-size: 19px;
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar-side .nav-item:hover {
+  background-color: #000;
+}
+
+.navbar-side .nav-item:hover > .nav-link {
+  color: #fff;
+}
+
+.navbar-side .nav-item:hover > .nav-item::before {
+  background: $bg-navbar;
+  width: 10px;
+  height: 10px;
+}
+
+.card {
+  border-style: none;
+}
+
+.section-name {
+	color:rgba(3, 3, 3, 0.4);
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+.image-holder{
+  position: relative;
+}
+
+.category {
+display: inline-block;
+color:$bg-navbar;
+background-color:rgba($color: #ffffff, $alpha: .89);
+position: absolute;
+bottom: 0;
+left: 0;
+}
+.card-title, .debate-theme {
+  color: #000;
+  cursor: pointer;
+}
+
+.card-title:hover, .debate-theme:hover {
+  text-decoration: underline $bg-navbar;
+}
+
+@media (min-width: 768px) {
+  .navbar-side {
+    position: absolute;
+    top: 56px;
+    width: 95%;
+    clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
+    background-color: #fff;
+    left: 0;
+  }
+
+  .navbar-side .nav-item:hover {
+    background-color: transparent;
+  }
+
+  .navbar-side .nav-item:hover > .nav-link {
+    color: $bg-navbar;
+  }
+
+  .navbar-side .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 11px;
     height: 18px;
     width: 1px;
     background-color: #d9d9d9;
+  }
 }
 
+// main
+.main {
+	margin-top: 30px;
+}
 
+// debate
+.debate-d-line {
+	height: 4px;
+	background: #d9d9d9;
+	width: 100%;
+}
+
+.debater-img {
+	width: 63px;
+	height: 63px;
+}
+
+.vs {
+    z-index: 4;
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    color: #d6d6d6;
+    border-radius: 50%;
+    font-size: 14px/32px;
+}
+.vs-line {
+	position: relative;
+	background-color: #d9d9d9;
+	height: 1px;
+	width: 100%;
+	top: 18px;
+}
+.vs-line::before {
+	content: "";
+    display: block;
+    background-color: #d9d9d9;
+    height: 1px;
+    position: absolute;
+    left: 0;
+	right: 0;
+	top: calc(50% - 2px);
+	z-index: 1;
+	width: 100%;
+}
