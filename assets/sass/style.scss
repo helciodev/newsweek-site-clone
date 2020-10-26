@@ -354,11 +354,6 @@ left: 0;
   background:#C2D4D7;
 }
 
-// first form
-// .form {
-//   width: 65%;
-// }
-
 .form .btn, .big-n {
   background-color: $bg-navbar;
 }
@@ -396,6 +391,7 @@ left: 0;
 .text-abs {
   top:190px;
   color:#000;
+  font-size : 16px;
 }
 
 .subs-benef p {
@@ -410,3 +406,45 @@ left: 0;
 .subs-btn{
   background:$bg-navbar; 
 }
+
+// newsletter
+
+.newsletter-bg {
+height: 170px;
+background: #333 url(../images/newsletter-bg.png) no-repeat center;
+background-size: cover;
+}
+
+// footer 
+
+.logo-footer {
+  width: 15rem;
+  height: 4rem;
+}
+
+.social-footer .facebook:hover {
+color: #3B5998!important;
+}
+
+.footer-links > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-footer .twitter:hover {
+color: #1DA1F2!important;
+}
+
+.social-footer .instagram:hover {
+color: #405DE6!important;
+}
+
+.social-footer .tumblr:hover {
+color:#3592D5!important;
+}
+
+.social-footer .linkedin:hover {
+color:#0077B5!important;
+}
+
+
+

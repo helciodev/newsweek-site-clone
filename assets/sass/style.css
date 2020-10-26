@@ -407,6 +407,7 @@ p {
 .text-abs {
   top: 190px;
   color: #000;
+  font-size: 16px;
 }
 
 .subs-benef p {
@@ -420,5 +421,40 @@ p {
 
 .subs-btn {
   background: #f72210;
+}
+
+.newsletter-bg {
+  height: 170px;
+  background: #333 url(../images/newsletter-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.logo-footer {
+  width: 15rem;
+  height: 4rem;
+}
+
+.social-footer .facebook:hover {
+  color: #3B5998 !important;
+}
+
+.footer-links > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-footer .twitter:hover {
+  color: #1DA1F2 !important;
+}
+
+.social-footer .instagram:hover {
+  color: #405DE6 !important;
+}
+
+.social-footer .tumblr:hover {
+  color: #3592D5 !important;
+}
+
+.social-footer .linkedin:hover {
+  color: #0077B5 !important;
 }
 /*# sourceMappingURL=style.css.map */
