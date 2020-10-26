@@ -395,4 +395,30 @@ p {
   left: 0;
   background: #f72210;
 }
+
+.secondary-item-title {
+  color: #f72210;
+}
+
+.current-cover {
+  margin-left: -6rem;
+}
+
+.text-abs {
+  top: 190px;
+  color: #000;
+}
+
+.subs-benef p {
+  font-size: 1.05rem;
+}
+
+.subs-benef > :first-child {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.subs-btn {
+  background: #f72210;
+}
 /*# sourceMappingURL=style.css.map */
