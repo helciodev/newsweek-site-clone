@@ -363,4 +363,36 @@ p {
   width: 95px;
   height: 95px;
 }
+
+.topic img, .topic h3, .travel-img-title {
+  cursor: pointer;
+}
+
+.travel-img-title {
+  left: 0;
+  bottom: 0;
+  background: #C2D4D7;
+}
+
+.form .btn, .big-n {
+  background-color: #f72210;
+}
+
+.features-see {
+  cursor: pointer;
+}
+
+.features-see:hover {
+  background: #DBDCDD;
+}
+
+.red-color {
+  color: #f72210;
+}
+
+.focus-t {
+  bottom: 0;
+  left: 0;
+  background: #f72210;
+}
 /*# sourceMappingURL=style.css.map */

@@ -343,3 +343,40 @@ left: 0;
 	width: 95px;
 	height: 95px;
 }
+
+.topic img, .topic h3, .travel-img-title {
+  cursor:pointer;
+}
+
+.travel-img-title {
+  left: 0;
+  bottom: 0;
+  background:#C2D4D7;
+}
+
+// first form
+// .form {
+//   width: 65%;
+// }
+
+.form .btn, .big-n {
+  background-color: $bg-navbar;
+}
+
+.features-see {
+  cursor: pointer;
+
+  &:hover {
+    background: #DBDCDD;
+  }
+}
+
+.red-color {
+  color: $bg-navbar;
+}
+
+.focus-t {
+  bottom:0;
+  left:0;
+  background:$bg-navbar;
+}
