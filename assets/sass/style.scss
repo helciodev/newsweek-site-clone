@@ -12,7 +12,11 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: $body-color;
   line-height: 24px;
+  overflow-x: hidden;
 }
+// .parent {
+// overflowx
+// }
 
 p {
 	font-size: 13px;
@@ -265,34 +269,6 @@ left: 0;
   text-decoration: underline $bg-navbar;
 }
 
-@media (min-width: 768px) {
-  .navbar-side {
-    position: absolute;
-    top: 56px;
-    width: 95%;
-    clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
-    background-color: #fff;
-    left: 0;
-  }
-
-  .navbar-side .nav-item:hover {
-    background-color: transparent;
-  }
-
-  .navbar-side .nav-item:hover > .nav-link {
-    color: $bg-navbar;
-  }
-
-  .navbar-side .nav-item::before {
-    content: '';
-    position: absolute;
-    top: 11px;
-    height: 18px;
-    width: 1px;
-    background-color: #d9d9d9;
-  }
-}
-
 // main
 .main {
 	margin-top: 30px;
@@ -411,7 +387,7 @@ left: 0;
 
 .newsletter-bg {
 height: 170px;
-background: #333 url(../images/newsletter-bg.png) no-repeat center;
+background: #333;
 background-size: cover;
 }
 
@@ -433,7 +409,9 @@ color: #3B5998!important;
 .social-footer .twitter:hover {
 color: #1DA1F2!important;
 }
-
+.bg-red {
+  background-color: red;
+}
 .social-footer .instagram:hover {
 color: #405DE6!important;
 }
@@ -446,5 +424,48 @@ color:#3592D5!important;
 color:#0077B5!important;
 }
 
+// --breakpoint-xs: 0;
+// --breakpoint-sm: 576px;
+// --breakpoint-md: 768px;
+// --breakpoint-lg: 992px;
+// --breakpoint-xl: 1200px;
 
 
+// small
+@media (min-width:320px) {
+  .tablet {
+    display: none;
+  }
+}
+
+//small
+
+// media tablet
+@media (min-width: 768px) {
+  .navbar-side {
+    position: absolute;
+    top: 56px;
+    width: 95%;
+    clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
+    background-color: #fff;
+    left: 0;
+  }
+
+  .navbar-side .nav-item:hover {
+    background-color: transparent;
+  }
+
+  .navbar-side .nav-item:hover > .nav-link {
+    color: $bg-navbar;
+  }
+
+  .navbar-side .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    height: 18px;
+    width: 1px;
+    background-color: #d9d9d9;
+  }
+  
+}
