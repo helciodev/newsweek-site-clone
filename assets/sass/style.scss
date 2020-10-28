@@ -24,7 +24,7 @@ p {
 .sticky {
   position: fixed;
   top: 0;
-  width:35%;
+  width: 35%;
 }
 
 .info {
@@ -40,7 +40,7 @@ p {
   display: none;
   justify-content: space-between;
   height: 45px;
-  background: $bg-navbar!important;
+  background: $bg-navbar !important;
 }
 
 .clouds {
@@ -190,8 +190,6 @@ p {
   top: 100px;
 }
 
-
-
 .navbar-side .nav-link {
   font-size: 19px;
   color: #000;
@@ -214,11 +212,6 @@ p {
   background: $bg-navbar;
   width: 10px;
   height: 10px;
-}
-
-
-.nav-bottom .nav-link:hover {
-color:$bg-navbar!important;
 }
 
 .card {
@@ -378,7 +371,7 @@ color:$bg-navbar!important;
 
 // newsletter
 .previous-current {
-  background-color: $body-color;;
+  background-color: $body-color;
 }
 
 .newsletter-bg {
@@ -437,9 +430,6 @@ color:$bg-navbar!important;
 
 // media tablet
 @media (min-width: 768px) {
-
- 
-
   .newsweek-logo {
     width: 230px;
     height: 175px;
@@ -458,6 +448,10 @@ color:$bg-navbar!important;
     background-color: transparent;
   }
 
+  .nav-bottom .nav-link:hover {
+    color: $bg-navbar !important;
+  }
+
   .navbar-side .nav-item:hover > .nav-link {
     color: $bg-navbar;
   }
@@ -471,27 +465,32 @@ color:$bg-navbar!important;
     background-color: #d9d9d9;
   }
 
-.newsletter-element {
-  height: 267px;
-}
+  .newsletter-element {
+    height: 267px;
+  }
+
+  .main {
+  margin-top: -4rem!important;
+  }
 
   .text-abs {
     top: 50px;
     font-size: 17px;
-    width: 39%!important;
-    text-align:left;
+    width: 39% !important;
+    text-align: left;
   }
 
-  .signup .form-control, .signup .subs-btn {
+  .signup .form-control,
+  .signup .subs-btn {
     width: 40% !important;
   }
 
   .signup {
-    width: 308px;;
+    width: 308px;
   }
 }
 
-@media (min-width:1240px) {
+@media (min-width: 1240px) {
   body {
     overflow-x: hidden;
     width: 1300px;
@@ -511,12 +510,13 @@ color:$bg-navbar!important;
   .input-search {
     font-size: 22px;
     width: 32%;
-   
   }
+
   .input-search:focus {
     outline: none;
     border-bottom: 1px solid #333;
   }
+
   .previous-current {
     width: 820px;
   }
@@ -526,16 +526,21 @@ color:$bg-navbar!important;
     font-size: 19px;
     width: 47% !important;
   }
-.newsletter {
-  width: 31%;
-}
+
+  .newsletter {
+    width: 31%;
+  }
+
   .newsletter-bg {
     height: 100%;
   }
-.large-display {
-  width:97%;
-}
-  .signup .form-control, .signup .subs-btn {
+
+  .large-display {
+    width: 97%;
+  }
+
+  .signup .form-control,
+  .signup .subs-btn {
     width: 154px !important;
     font-size: 13px;
   }
@@ -543,5 +548,4 @@ color:$bg-navbar!important;
   .signup {
     width: 330px;
   }
-
 }

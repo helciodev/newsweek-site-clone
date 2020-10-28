@@ -235,10 +235,6 @@ p {
   height: 10px;
 }
 
-.nav-bottom .nav-link:hover {
-  color: #f72210 !important;
-}
-
 .card {
   border-style: none;
 }
@@ -451,6 +447,9 @@ p {
   .navbar-side .nav-item:hover {
     background-color: transparent;
   }
+  .nav-bottom .nav-link:hover {
+    color: #f72210 !important;
+  }
   .navbar-side .nav-item:hover > .nav-link {
     color: #f72210;
   }
@@ -465,13 +464,17 @@ p {
   .newsletter-element {
     height: 267px;
   }
+  .main {
+    margin-top: -4rem !important;
+  }
   .text-abs {
     top: 50px;
     font-size: 17px;
     width: 39% !important;
     text-align: left;
   }
-  .signup .form-control, .signup .subs-btn {
+  .signup .form-control,
+  .signup .subs-btn {
     width: 40% !important;
   }
   .signup {
@@ -519,7 +522,8 @@ p {
   .large-display {
     width: 97%;
   }
-  .signup .form-control, .signup .subs-btn {
+  .signup .form-control,
+  .signup .subs-btn {
     width: 154px !important;
     font-size: 13px;
   }
