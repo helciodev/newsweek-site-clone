@@ -9,13 +9,6 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #f4f5f6;
   line-height: 24px;
-  overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 p {
@@ -39,6 +32,7 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 45px;
+  background: #f72210 !important;
 }
 
 .clouds {
@@ -203,16 +197,6 @@ p {
   position: relative;
 }
 
-.navbar-side {
-  position: fixed;
-  width: 171px;
-  top: 46px;
-  right: 0;
-  -webkit-transition: right 0.2s ease;
-  transition: right 0.2s ease;
-  z-index: 998;
-}
-
 .division-line {
   position: absolute;
   height: 2px;
@@ -221,24 +205,14 @@ p {
   top: 100px;
 }
 
-.navbar-side .nav-item:not(:last-of-type) {
-  position: relative;
-  margin-right: 1rem;
-}
-
-.navbar-side .nav-item::before {
-  content: '\203A';
-  position: absolute;
-  top: 11px;
-  right: -9px;
-  height: 18px;
-  width: 1px;
-}
-
 .navbar-side .nav-link {
   font-size: 19px;
   color: #000;
   font-weight: bold;
+}
+
+.navbar-side .nav-item {
+  position: relative;
 }
 
 .navbar-side .nav-item:hover {
@@ -294,10 +268,6 @@ p {
 .debate-theme:hover {
   -webkit-text-decoration: underline #f72210;
           text-decoration: underline #f72210;
-}
-
-.main {
-  margin-top: 30px;
 }
 
 .debate-d-line {
@@ -409,9 +379,13 @@ p {
   background: #f72210;
 }
 
+.previous-current {
+  background-color: #f4f5f6;
+}
+
 .newsletter-bg {
   height: 170px;
-  background: #333;
+  background: #333 url(../images/newsletter-bg.png);
   background-size: cover;
 }
 
@@ -460,6 +434,7 @@ p {
     height: 175px;
   }
   .navbar-side {
+    width: 95%;
     position: absolute;
     top: 56px;
     -webkit-clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
@@ -473,13 +448,41 @@ p {
   .navbar-side .nav-item:hover > .nav-link {
     color: #f72210;
   }
-  .navbar-side .nav-item::before {
+  .navbar-side .nav-item:not(:first-of-type)::before {
     content: '';
     position: absolute;
     top: 11px;
     height: 18px;
     width: 1px;
     background-color: #d9d9d9;
+  }
+  .newsletter-element {
+    height: 267px;
+  }
+  .text-abs {
+    top: 68px;
+    font-size: 17px;
+    width: 39% !important;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1240px) {
+  body {
+    overflow-x: hidden;
+    width: 1300px;
+  }
+  .previous-current {
+    width: 680px;
+  }
+  .text-abs {
+    top: 49px;
+    font-size: 19px;
+    width: 47% !important;
+    text-align: left !important;
+  }
+  .newsletter-bg {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
