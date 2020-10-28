@@ -211,6 +211,10 @@ p {
   top: 100px;
 }
 
+.navbar-side {
+  z-index: 1000;
+}
+
 .navbar-side .nav-link {
   font-size: 19px;
   color: #000;
