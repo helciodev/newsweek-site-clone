@@ -18,6 +18,12 @@ p {
   line-height: 18px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 35%;
+}
+
 .info {
   background-color: #f72210;
 }
@@ -434,7 +440,7 @@ p {
     height: 175px;
   }
   .navbar-side {
-    width: 95%;
+    width: 99%;
     position: absolute;
     top: 56px;
     -webkit-clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
@@ -460,10 +466,16 @@ p {
     height: 267px;
   }
   .text-abs {
-    top: 68px;
+    top: 50px;
     font-size: 17px;
     width: 39% !important;
     text-align: left;
+  }
+  .signup .form-control, .signup .subs-btn {
+    width: 40% !important;
+  }
+  .signup {
+    width: 308px;
   }
 }
 
@@ -472,17 +484,47 @@ p {
     overflow-x: hidden;
     width: 1300px;
   }
+  .search-icon {
+    background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
+    width: 20px;
+    height: 20px;
+    clip: auto;
+    font-size: 0;
+    position: absolute;
+    right: 141px;
+    top: 9px;
+  }
+  .input-search {
+    font-size: 22px;
+    width: 32%;
+  }
+  .input-search:focus {
+    outline: none;
+    border-bottom: 1px solid #333;
+  }
   .previous-current {
-    width: 680px;
+    width: 820px;
   }
   .text-abs {
-    top: 49px;
+    top: 59px;
     font-size: 19px;
     width: 47% !important;
-    text-align: left !important;
+  }
+  .newsletter {
+    width: 31%;
   }
   .newsletter-bg {
     height: 100%;
+  }
+  .large-display {
+    width: 97%;
+  }
+  .signup .form-control, .signup .subs-btn {
+    width: 154px !important;
+    font-size: 13px;
+  }
+  .signup {
+    width: 330px;
   }
 }
 /*# sourceMappingURL=style.css.map */
