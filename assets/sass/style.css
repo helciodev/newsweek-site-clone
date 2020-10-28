@@ -10,11 +10,17 @@ body {
   background-color: #f4f5f6;
   line-height: 24px;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 p {
   font-size: 13px;
-  font-family: arial;
+  font-family: Arial, sans-serif;
   color: #333;
   line-height: 18px;
 }
@@ -32,10 +38,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.main-nav,
-.fixed--nav {
   height: 45px;
 }
 
@@ -253,6 +255,10 @@ p {
   height: 10px;
 }
 
+.nav-bottom .nav-link:hover {
+  color: #f72210 !important;
+}
+
 .card {
   border-style: none;
 }
@@ -278,12 +284,14 @@ p {
   left: 0;
 }
 
-.card-title, .debate-theme {
+.card-title,
+.debate-theme {
   color: #000;
   cursor: pointer;
 }
 
-.card-title:hover, .debate-theme:hover {
+.card-title:hover,
+.debate-theme:hover {
   -webkit-text-decoration: underline #f72210;
           text-decoration: underline #f72210;
 }
@@ -310,7 +318,7 @@ p {
   background-color: #000;
   color: #d6d6d6;
   border-radius: 50%;
-  font-size: 14px/32px;
+  font-size: 14px;
 }
 
 .vs-line {
@@ -339,17 +347,20 @@ p {
   height: 95px;
 }
 
-.topic img, .topic h3, .travel-img-title {
+.topic img,
+.topic h3,
+.travel-img-title {
   cursor: pointer;
 }
 
 .travel-img-title {
   left: 0;
   bottom: 0;
-  background: #C2D4D7;
+  background: #c2d4d7;
 }
 
-.form .btn, .big-n {
+.form .btn,
+.big-n {
   background-color: #f72210;
 }
 
@@ -358,7 +369,7 @@ p {
 }
 
 .features-see:hover {
-  background: #DBDCDD;
+  background: #dbdcdd;
 }
 
 .red-color {
@@ -410,7 +421,7 @@ p {
 }
 
 .social-footer .facebook:hover {
-  color: #3B5998 !important;
+  color: #3b5998 !important;
 }
 
 .footer-links > *:not(:last-child) {
@@ -418,7 +429,7 @@ p {
 }
 
 .social-footer .twitter:hover {
-  color: #1DA1F2 !important;
+  color: #1da1f2 !important;
 }
 
 .bg-red {
@@ -426,15 +437,15 @@ p {
 }
 
 .social-footer .instagram:hover {
-  color: #405DE6 !important;
+  color: #405de6 !important;
 }
 
 .social-footer .tumblr:hover {
-  color: #3592D5 !important;
+  color: #3592d5 !important;
 }
 
 .social-footer .linkedin:hover {
-  color: #0077B5 !important;
+  color: #0077b5 !important;
 }
 
 @media (min-width: 320px) {
@@ -444,10 +455,13 @@ p {
 }
 
 @media (min-width: 768px) {
+  .newsweek-logo {
+    width: 230px;
+    height: 175px;
+  }
   .navbar-side {
     position: absolute;
     top: 56px;
-    width: 95%;
     -webkit-clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
     background-color: #fff;

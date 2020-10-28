@@ -13,18 +13,18 @@ body {
   background-color: $body-color;
   line-height: 24px;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
-// .parent {
-// overflowx
-// }
+
+
 
 p {
-	font-size: 13px;
-	font-family: arial;
-	color: #333;
-	line-height: 18px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 18px;
 }
-
 
 .info {
   background-color: $bg-navbar;
@@ -38,10 +38,6 @@ p {
 .fixed--nav {
   display: none;
   justify-content: space-between;
-}
-
-.main-nav,
-.fixed--nav {
   height: 45px;
 }
 
@@ -193,7 +189,6 @@ p {
   z-index: 998;
 }
 
-
 .division-line {
   position: absolute;
   height: 2px;
@@ -236,101 +231,113 @@ p {
   height: 10px;
 }
 
+.nav-bottom .nav-link:hover {
+color:$bg-navbar!important;
+}
+
 .card {
   border-style: none;
 }
 
 .section-name {
-	color:rgba(3, 3, 3, 0.4);
+  color: rgba(3, 3, 3, 0.4);
 }
 
 .card-img {
   border-radius: 0;
 }
 
-.image-holder{
+.image-holder {
   position: relative;
 }
 
 .category {
-display: inline-block;
-color:$bg-navbar;
-background-color:rgba($color: #ffffff, $alpha: .89);
-position: absolute;
-bottom: 0;
-left: 0;
+  display: inline-block;
+  color: $bg-navbar;
+  background-color: rgba($color: #fff, $alpha: 0.89);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-.card-title, .debate-theme {
+
+.card-title,
+.debate-theme {
   color: #000;
   cursor: pointer;
 }
 
-.card-title:hover, .debate-theme:hover {
+.card-title:hover,
+.debate-theme:hover {
   text-decoration: underline $bg-navbar;
 }
 
 // main
 .main {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 // debate
 .debate-d-line {
-	height: 4px;
-	background: #d9d9d9;
-	width: 100%;
+  height: 4px;
+  background: #d9d9d9;
+  width: 100%;
 }
 
 .debater-img {
-	width: 63px;
-	height: 63px;
+  width: 63px;
+  height: 63px;
 }
 
 .vs {
-    z-index: 4;
-    width: 32px;
-    height: 32px;
-    background-color: #000;
-    color: #d6d6d6;
-    border-radius: 50%;
-    font-size: 14px/32px;
+  z-index: 4;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font-size: 14px;
 }
+
 .vs-line {
-	position: relative;
-	background-color: #d9d9d9;
-	height: 1px;
-	width: 100%;
-	top: 18px;
+  position: relative;
+  background-color: #d9d9d9;
+  height: 1px;
+  width: 100%;
+  top: 18px;
 }
+
 .vs-line::before {
-	content: "";
-    display: block;
-    background-color: #d9d9d9;
-    height: 1px;
-    position: absolute;
-    left: 0;
-	right: 0;
-	top: calc(50% - 2px);
-	z-index: 1;
-	width: 100%;
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(50% - 2px);
+  z-index: 1;
+  width: 100%;
 }
 
 .more-story img {
-	width: 95px;
-	height: 95px;
+  width: 95px;
+  height: 95px;
 }
 
-.topic img, .topic h3, .travel-img-title {
-  cursor:pointer;
+.topic img,
+.topic h3,
+.travel-img-title {
+  cursor: pointer;
 }
 
 .travel-img-title {
   left: 0;
   bottom: 0;
-  background:#C2D4D7;
+  background: #c2d4d7;
 }
 
-.form .btn, .big-n {
+.form .btn,
+.big-n {
   background-color: $bg-navbar;
 }
 
@@ -338,7 +345,7 @@ left: 0;
   cursor: pointer;
 
   &:hover {
-    background: #DBDCDD;
+    background: #dbdcdd;
   }
 }
 
@@ -347,9 +354,9 @@ left: 0;
 }
 
 .focus-t {
-  bottom:0;
-  left:0;
-  background:$bg-navbar;
+  bottom: 0;
+  left: 0;
+  background: $bg-navbar;
 }
 
 // editors secondary
@@ -365,9 +372,9 @@ left: 0;
 }
 
 .text-abs {
-  top:190px;
-  color:#000;
-  font-size : 16px;
+  top: 190px;
+  color: #000;
+  font-size: 16px;
 }
 
 .subs-benef p {
@@ -379,19 +386,19 @@ left: 0;
   margin-top: 4px;
 }
 
-.subs-btn{
-  background:$bg-navbar; 
+.subs-btn {
+  background: $bg-navbar;
 }
 
 // newsletter
 
 .newsletter-bg {
-height: 170px;
-background: #333;
-background-size: cover;
+  height: 170px;
+  background: #333;
+  background-size: cover;
 }
 
-// footer 
+// footer
 
 .logo-footer {
   width: 15rem;
@@ -399,7 +406,7 @@ background-size: cover;
 }
 
 .social-footer .facebook:hover {
-color: #3B5998!important;
+  color: #3b5998 !important;
 }
 
 .footer-links > *:not(:last-child) {
@@ -407,21 +414,23 @@ color: #3B5998!important;
 }
 
 .social-footer .twitter:hover {
-color: #1DA1F2!important;
+  color: #1da1f2 !important;
 }
+
 .bg-red {
   background-color: red;
 }
+
 .social-footer .instagram:hover {
-color: #405DE6!important;
+  color: #405de6 !important;
 }
 
 .social-footer .tumblr:hover {
-color:#3592D5!important;
+  color: #3592d5 !important;
 }
 
 .social-footer .linkedin:hover {
-color:#0077B5!important;
+  color: #0077b5 !important;
 }
 
 // --breakpoint-xs: 0;
@@ -430,22 +439,23 @@ color:#0077B5!important;
 // --breakpoint-lg: 992px;
 // --breakpoint-xl: 1200px;
 
-
 // small
-@media (min-width:320px) {
+@media (min-width: 320px) {
   .tablet {
     display: none;
   }
 }
 
-//small
-
 // media tablet
 @media (min-width: 768px) {
+  .newsweek-logo {
+    width: 230px;
+    height: 175px;
+  }
+
   .navbar-side {
     position: absolute;
     top: 56px;
-    width: 95%;
     clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
     background-color: #fff;
     left: 0;
@@ -467,5 +477,4 @@ color:#0077B5!important;
     width: 1px;
     background-color: #d9d9d9;
   }
-  
 }
