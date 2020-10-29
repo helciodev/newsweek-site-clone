@@ -22,35 +22,34 @@
 <body class=" mx-auto">
         <header class="header mb-n5">
     <nav class="main-nav w-100 bg-white navbar navbar-expand-xsm navbar-expand-lg d-flex flex-column p-0">
-        <div class="info w-100 d-flex justify-content-between align-items-center py-2 px-3">
-                        <div class="weather-date-info d-none d-lg-block text-light">
-                            <div class="weather font-weight-bold ">
-                                <img src="assets/images/28.webp" class="clouds" alt="cloudy">
-                                <span>27 &deg; Luanda, AO <i class="fa fa-chevron-right " aria-hidden="true"></i>  </span>
-                            </div>
-        
-                            <div class="date">
-                            </div>
+      <div class="info w-100 d-flex justify-content-between align-items-center py-2 px-3">
+          <div class="weather-date-info d-none d-lg-block text-light">
+                      <div class="weather font-weight-bold ">
+                          <img src="assets/images/28.webp" class="clouds" alt="cloudy">
+                          <span>27 &deg; Luanda, AO <i class="fa fa-chevron-right " aria-hidden="true"></i>  </span>
                         </div>
-        <div class="logo d-flex align-items-center p-0">
-                    <a href="#" class="navbar-brand">
-                    <img class="newsweek-logo" src="assets/images/logo-top.svg" alt="newsgeek logo" aria-label="news week logo">
-                    </a>
-            </div>
-            <div class="d-flex align-items-center justify-content-between p-0">
+                        <div class="date">
+                      </div>
+                </div>
+                  <div class="logo d-flex align-items-center p-0">
+                  <a href="#" class="navbar-brand">
+                  <img class="newsweek-logo" src="assets/images/logo-top.svg" alt="newsgeek logo" aria-label="news week logo">
+                  </a>
+                  </div>
+              <div class="d-flex align-items-center justify-content-between p-0">
                 <button type="button" class="btn text-white border-0 mr-1">
-    <span class="fa fa-user d-md-none" aria-hidden="true"></span>
+              <span class="fa fa-user d-md-none" aria-hidden="true"></span>
                     <span class="d-none d-md-block text-uppercase font-weight-bold text">login</span>
                 </button>
-    <button class="btn btn-md active rounded-pill px-2 text-uppercase font-weight-bolder  text-sm btn-subs" type="button" aria-pressed="true"><span>subscribe &#10095;</span></button>
-    <a class="hamburger hamburger--spin ml-1 d-lg-none navbar-toggler"  data-toggle="collapse" href="#navbarNavAltMarkup" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </a>
+              <button class="btn btn-md active rounded-pill px-2 text-uppercase font-weight-bolder  text-sm btn-subs" type="button" aria-pressed="true"><span>subscribe &#10095;</span></button>
+              <a class="hamburger hamburger--spin ml-1 d-lg-none navbar-toggler"  data-toggle="collapse" href="#navbarNavAltMarkup" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+              </span>
+              </a>
+            </div>
       </div>
-          </div>
-  <div class="collapse navbar-collapse navbar-side" id="navbarNavAltMarkup">
+  <div class="collapse navbar-collapse navbar-side mt-n5" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <ul class="navbar-nav mr-auto pt-2 text-capitalize"> 
         <li class="nav-item">
@@ -133,7 +132,7 @@
  <nav class="navbar fixed--nav fixed-top mb-n5 bg-dark navbar-dark">
   <div class="logo d-flex align-items-center p-0">
     <a href="#" class="navbar-brand">
-    <img class="newsweek-logo" src="assets/images/logo-top.svg" alt="newsgeek logo" aria-label="news week logo">
+    <img class="newsweek-logo-fixed" src="assets/images/logo-top.svg" alt="newsgeek logo" aria-label="news week logo">
     </a>
     </div> 
     <div class="user-and-toggler d-flex align-items-center justify-content-between">
@@ -150,7 +149,7 @@
 </button>
   </div>
 </nav>
-  <main class="main bg-white pb-3 overflow-hidden mt-n5 d-flex flex-column px-2 align-items-center mt-sm-4">
+  <main class="main bg-white pb-3 overflow-hidden mt-n5 d-flex flex-column px-3 align-items-center mt-sm-4">
           <!--top story -->
             <article class="top-story mt-sm-5 d-md-none">
               <h3 class="section-name text-uppercase mt-4 h6 font-weight-bold">top  story</h3>
@@ -270,8 +269,8 @@
   </article>
 </div>
 <!-- TABLET && desktop -->
-  <div class="tablet d-md-flex mt-lg-5 row w-100 mt-5 ">
-    <div class="featured-stories-adds top-0 col-md-5 col-lg-4">
+  <div class="tablet d-md-flex mt-lg-5 row w-100 mt-5  ">
+    <div class="featured-stories-adds top-0 col-md-5 sticky-top col-lg-4">
   
       <div class="feature-stories">
        
@@ -506,20 +505,22 @@
         <h3 class="section-name text-uppercase h6 font-weight-bold">my turn</h3>
         <div class="my-turn-stories d-flex justify-content-around">
         <!-- first -->
-          <div class="topic d-flex flex-column">
+        <div class="my-turn-p row">
+
+          <div class="topic d-flex flex-column col-md-4">
             <img src="./assets/images/myturn-sleep-sleep-doctor-sleep-tips.webp" class="img-fluid" alt="myturn-sleep-sleep-doctor-sleep-tips">
             <h3 class="text-secondary h6 font-weight-bold mt-3 mb-4">'I'm a Sleep Doctor. Here Are 5 Tips to Sleep Well'</h3>
           </div>
         <!-- second -->
-          <div class="topic d-flex flex-column col-md-4">
-            <div class="topic d-flex flex-column ">
-            <img src="./assets/images/myturn-marriage-wedding-married-later-life.webp" class="img-fluid" alt="myturn-sleep-sleep-doctor-sleep-tips">
+         
+            <div class="topic d-flex flex-column col-md-4">
+            <img src="./assets/images/myturn-marriage-wedding-married-later-life.webp"  class="img-fluid" alt="myturn-sleep-sleep-doctor-sleep-tips">
             <h3 class="text-secondary h6 font-weight-bold mt-3 mb-4">'I Married for the First Time at 60''</h3>
           </div>
-          </div>
+         
         <!-- third -->
-          <div class="topic d-flex flex-column col-md-4">
-            <div class="topic d-flex flex-column">
+         
+            <div class="topic d-flex flex-column col-md-4">
             <img src="./assets/images/myturn-best-friends-love-relationships.webp" class="img-fluid" alt="myturn-sleep-sleep-doctor-sleep-tips">
             <h3 class="text-secondary h6 font-weight-bold mt-3 mb-4">'I Fell in Love With My Best Friend and Finally Asked Her Out'</h3>
           </div>
@@ -565,7 +566,7 @@
               </div>
             </div>
           </div>
-          <div class="more-stories-small sticky-top mt-2">
+          <div class="more-stories-small more-sticky sticky-top mt-2">
             <h3 class="section-name text-uppercase h6 font-weight-bold">more stories</h3>
             <!-- 1 -->
             <div class="more-story d-flex border-top pt-3 mt-3">
@@ -957,7 +958,7 @@
   </div>
 
   <!-- debate -->
-<div class="debate mt-5 d-flex d-lg-none flex-column align-items-center">
+<div class="debate mt-5 d-flex d-lg-none col-md-12 flex-column align-items-center">
   <h3 class="section-name text-uppercase align-self-start h6 font-weight-bold">the debate</h3>
   <div class="debate-d-line my-3"></div>
   <!-- first debater -->
@@ -1551,7 +1552,7 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
     <div class="in-the-magazine-cover col-md-3">
       <div class="image-holder magazine-item">
         <a href="#">
-        <img class="card-img-top card-img" alt="october cover" src="https://d.newsweek.com/en/full/1653518/cover-october-23-2020.jpg?w=360&h=480&q=90&f=e8aecc49d91d80d4475f9fe710c46554">
+        <img class="img-fluid d-block mx-auto" alt="october cover" src="https://d.newsweek.com/en/full/1653518/cover-october-23-2020.jpg?w=360&h=480&q=90&f=e8aecc49d91d80d4475f9fe710c46554">
       </a>
       <h6 class="category px-2 mb-0 h5 font-weight-bold text-uppercase py-1">
         october 23 issue
@@ -1563,44 +1564,44 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
       </div>
       <!-- first -->
       <div class="InMagazineItem col-md-3">
-        <img src="./assets/images/cover-tech-&-science.webp" class="img-fluid" alt="tech and science">
+        <img class="img-fluid w-100 inMagazineImg" src="./assets/images/cover-tech-&-science.webp" alt="tech and science">
 
-          <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white">cover </span><span class="ml-1 red-color">tech &amp; science</span></h3>
+          <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white inThemagazinetitle">cover </span><span class="ml-1 red-color inThemagazinetitle">tech &amp; science</span></h3>
           <p class="card-title h6 font-weight-bold">As QAnon Conspiracies Spread, Scientists Fight a Misinformation Pandemic</p>
         
       </div>
       <!-- second -->
       <div class="InMagazineItem col-md-3">
-        <img class="img-fluid" alt="pensylvania" src="./assets/images/per-pennsylvania-vote.webp">
-        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white">periscope </span><span class="ml-1 red-color">politics</span></h3>
+        <img class="img-fluid inMagazineImg w-100" alt="pensylvania" src="./assets/images/per-pennsylvania-vote.webp">
+        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white inThemagazinetitle">periscope </span><span class="ml-1 red-color inThemagazinetitle">politics</span></h3>
         <p class="card-title h6 font-weight-bold">If We Don't Win in Pennsylvania, 'We Are So Screwed,' Biden Insider Says
         </p>
       </div>    
       <!--third -->
       <div class="InMagazineItem col-md-3">
-        <img src="https://d.newsweek.com/en/full/1629912/taipei-taiwan-cityscape.jpg?w=466&h=311&q=90&f=64a83a51974d9fc18e8404a93eba5fdf" class="img-fluid" alt="tech and science">
-        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white">periscope </span><span class="ml-1 red-color">opinion</span></h3>
+        <img src="https://d.newsweek.com/en/full/1629912/taipei-taiwan-cityscape.jpg?w=466&h=311&q=90&f=64a83a51974d9fc18e8404a93eba5fdf" class="img-fluid inMagazineImg w-100" alt="tech and science">
+        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white inThemagazinetitle">periscope </span><span class="ml-1 red-color inThemagazinetitle">opinion</span></h3>
         <p class="card-title h6 font-weight-bold">Avoid War, Defend America, Recognize Taiwan</p>
       </div>    
       <!-- 4 -->
       <div class="InMagazineItem col-md-3">
-        <img class="img-fluid" src="./assets/images/per-offshore-islands-taiwan-strait.webp" alt="offshore">
-        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white">periscope </span><span class="ml-1 red-color">culture</span></h3>
+        <img class="img-fluid inMagazineImg w-100" src="./assets/images/per-offshore-islands-taiwan-strait.webp" alt="offshore">
+        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white inThemagazinetitle">periscope </span><span class="ml-1 red-color inThemagazinetitle">culture</span></h3>
         <p class=" h6 font-weight-bold">Don't Rush to Fully Normalize Relations With Taiwan
         </p>
       </div>    
       <!-- 5 -->
       <div class="InMagazineItem col-md-3">
-        <img class="img-fluid" src="./assets/images/downtime-parting-shot-trevor-noah.webp" alt="tech and science">
-        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white">downtime </span><span class="ml-1 red-color">culture</span></h3>
+        <img class="img-fluid inMagazineImg w-100" src="./assets/images/downtime-parting-shot-trevor-noah.webp" alt="tech and science">
+        <h3 class="h5 mt-2 text-uppercase font-weight-bold"><span class="big-n text-white inThemagazinetitle ">downtime </span><span class="ml-1 red-color inThemagazinetitle">culture</span></h3>
         <p class="card-title h6 font-weight-bold">Trevor Noah Says the Left and the Right Can Agree on at Least One Thing
         </p>
       </div>    
       <!-- 6 in focus -->
       <div class="InFocus col-md-3">
         <div class="image-holder-focus position-relative">
-          <a href="#"><img class="img-fluid" src="./assets/images/per-storm-sequel.jpg" alt="storm sequel"></a>
-          <div class="focus-t text-white font-weight-bold h6 position-absolute mb-0 text-uppercase px-2">
+          <a href="#"><img class="img-fluid inMagazineImg w-100" src="./assets/images/per-storm-sequel.jpg" alt="storm sequel"></a>
+          <div class="focus-t text-white inThemagazinetitle font-weight-bold h6 position-absolute mb-0 text-uppercase px-2">
             in focus
           </div>
         </div>
@@ -2047,15 +2048,15 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
     </aside>
   </div>
 </div>
-<div class="large-display d-lg-flex justify-content-between  mx-5">
+<div class="large-display d-lg-flex w-100 justify-content-between  mx-5">
 
-  <div class="subscribe mt-5 d-flex flex-column align-items-center position-relative">
+  <div class="subscribe mt-5 d-flex w-100  flex-column align-items-center position-relative">
     <div class="secondary-item-title text-uppercase font-weight-bold align-self-start h6">
       subsccribe
     </div>
   
     <div class="previous-current p-3 
-    d-flex flex-column align-items-center flex-md-row justify-content-lg-space-around">
+    d-flex flex-column align-items-center flex-md-row w-100  justify-content-center ml-lg-4">
       <div class="previous-next d-flex justify-content-center">
   
         <div class="previous-cover pb-2">
@@ -2083,12 +2084,12 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
     </div>
   </div>
   
-  <div class="newsletter mt-5 h-100">
+  <div class="newsletter bg-danger w-100 mt-5">
     <div class="secondary-item-title text-uppercase font-weight-bold align-self-start h6">
       newsletter
     </div>
   
-    <div class=" newsletter-element border row">
+    <!-- <div class=" newsletter-element border row">
       <div class="newsletter-bg col-md-6">
   
       </div>
@@ -2109,16 +2110,16 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
       </div>
   
   </div>
-    </div>
+    </div> -->
       </div>
 </div>
     </main>
-    <footer class="footer mt-5">
+    <footer class="footer mt-0 border-top pt-5 px-4 pb-4 bg-white">
       <div class="  d-md-flex justify-content-between border-bottom align-baseline">
 
-        <div class="logo-copyright  d-md-flex align-baseline">
-          <img src="./assets/images/newsweek-red-logo.svg"   alt="newsweeklogo" class="logo-footer">
-          <div class="copy pt-md-4 ml-md-2">
+        <div class="logo-copyright  d-md-flex align-center">
+          <img src="./assets/images/newsweekhidef-logo.png"   alt="newsweeklogo" class="logo-footer">
+          <div class="copy pt-md-4 mt-md-2 my-3 ml-md-2">
             © 2020 NEWSWEEK DIGITAL LLC
           </div>
         </div>
@@ -2145,7 +2146,9 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
       </div>
       
       <div class="editions pt-3">
-        
+       
+
+        </div>
         <ul class="list-unstyled d-flex">
           <li class="text-dark font-weight-bold text-capitalize mr-3" >editions</li>
           <li class="mr-3"><a class="text-secondary text-decoration-none" href="#">U.S. Edition</a></li>
@@ -2156,20 +2159,21 @@ Utah State Senator Don Ipson backtracks after suggesting people should "stay hom
           <li class="mr-3"><a class="text-secondary text-decoration-none" href="">
             România</a></li>
         </ul>
-        <ul class="footer-links list-unstyled d-flex  flex-wrap">
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">aobut us</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">corrections</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">contact us</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize"></a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">editorial guidelines</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">advertise</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">copyright</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">terms &amp; conditions</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">privacy policy</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">cookies policy</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">terms of sale</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none text-capitalize">archive</a></li>
-        </ul>
+
+          <ul class="footer-links list-unstyled">
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link  position-relative text-decoration-none text-capitalize">about us</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">corrections</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">contact us</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">editorial guidelines</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">advertise</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">copyright</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">terms &amp; conditions</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">privacy policy</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">cookies policy</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">terms of sale</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">archive</a></li>
+            <li class="d-inline-block pr-1 my-2"><a href="#" class="text-secondary footer-link position-relative text-decoration-none text-capitalize">anouncements</a></li>
+          </ul>
       </div>
     </footer> 
    <!-- javascript -->
