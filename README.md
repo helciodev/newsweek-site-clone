@@ -28,6 +28,7 @@ This project consists of replicating the The newsweek site home page putting emp
 - [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 - [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 - ![desktop view](assets/images/sass.png)   
+- [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 ## Live Demo
 
