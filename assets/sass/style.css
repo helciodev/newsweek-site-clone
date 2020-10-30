@@ -546,7 +546,7 @@ p {
   .inThemagazinetitle {
     font-size: 18px;
   }
-  .footer-link:last-child:before {
+  .footer-link:last-child::before {
     content: '';
     position: absolute;
     top: 2px;
@@ -558,6 +558,6 @@ p {
 }
 
 .cover-subscribe {
-  background-color: #F4F5F6;
+  background-color: #f4f5f6;
 }
 /*# sourceMappingURL=style.css.map */

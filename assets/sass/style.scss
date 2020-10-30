@@ -24,7 +24,7 @@ p {
 .sticky {
   position: fixed;
   top: 0;
-  width: 471px
+  width: 471px;
 }
 
 .info {
@@ -439,7 +439,6 @@ p {
 
 // media tablet
 @media (min-width: 768px) {
-
   .navbar-side .nav-item:hover {
     background-color: transparent;
   }
@@ -490,8 +489,8 @@ p {
     height: 153px;
   }
 
-  .inThemagazinetitle  {
-    font-size: 15px
+  .inThemagazinetitle {
+    font-size: 15px;
   }
 }
 
@@ -509,7 +508,6 @@ p {
     background-color: #fff;
     left: 0;
   }
-
 
   .info {
     height: 110px;
@@ -542,13 +540,10 @@ p {
   }
 
   .newsletter-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
-
-  
 
   .large-display {
     width: 97%;
@@ -559,14 +554,14 @@ p {
   }
 
   .inMagazineImg {
-    height: 283px
+    height: 283px;
   }
 
-  .inThemagazinetitle  {
-    font-size: 18px
+  .inThemagazinetitle {
+    font-size: 18px;
   }
 
-  .footer-link:last-child:before {
+  .footer-link:last-child::before {
     content: '';
     position: absolute;
     top: 2px;
@@ -578,12 +573,5 @@ p {
 }
 
 .cover-subscribe {
- background-color: #F4F5F6;
-}
-
-// .free-signup {
-//   width: 20%;
-// }
-.cover, .cover-text {
-  
+  background-color: #f4f5f6;
 }
