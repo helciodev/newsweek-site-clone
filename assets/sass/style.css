@@ -371,7 +371,7 @@ p {
   margin-left: -6rem;
 }
 
-.text-abs {
+.text-abs-md {
   top: 190px;
   color: #000;
   font-size: 16px;
@@ -462,14 +462,22 @@ p {
     width: 1px;
     background-color: #d9d9d9;
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 448px;
+  }
   .newsletter-element {
     height: 172px;
   }
   .main {
     margin-top: -4rem !important;
   }
-  .text-abs {
-    font-size: 17px;
+  .text-abs-md {
+    font-size: 20px;
+    top: 70px;
+    width: 50% !important;
+    right: 34px;
   }
   .signup {
     width: 308px;
@@ -520,9 +528,6 @@ p {
   .input-search:focus {
     outline: none;
     border-bottom: 1px solid #333;
-  }
-  .text-abs {
-    font-size: 19px;
   }
   .newsletter-bg {
     background-size: cover;

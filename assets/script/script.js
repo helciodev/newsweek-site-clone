@@ -50,5 +50,5 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 
-  if(window.scrollY >= 4750) navbar.classList.remove('sticky');
+  if(window.scrollY >= 4500) navbar.classList.remove('sticky');
 }
