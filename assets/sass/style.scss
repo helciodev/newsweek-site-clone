@@ -470,16 +470,13 @@ p {
   }
 
   .text-abs {
-    top: 50px;
     font-size: 17px;
-    width: 39% !important;
-    text-align: left;
   }
 
-  .signup .form-control,
-  .signup .subs-btn {
-    width: 40% !important;
-  }
+  // .signup .form-control,
+  // .signup .subs-btn {
+  //   width: 40% !important;
+  // }
 
   .signup {
     width: 308px;
@@ -540,34 +537,21 @@ p {
     border-bottom: 1px solid #333;
   }
 
-  .previous-current {
-width: 75% !important;
-  }
-
   .text-abs {
-    top: 59px;
     font-size: 19px;
-    width: 47% !important;
-  }
-
-  .newsletter {
-    width: 31% !important;
-    overflow-x: hidden;
   }
 
   .newsletter-bg {
-    height: 100%;
-    width: 20% !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+
   }
+
+  
 
   .large-display {
     width: 97%;
-  }
-
-  .signup .form-control,
-  .signup .subs-btn {
-    width: 154px !important;
-    font-size: 13px;
   }
 
   .signup {
@@ -581,6 +565,7 @@ width: 75% !important;
   .inThemagazinetitle  {
     font-size: 18px
   }
+
   .footer-link:last-child:before {
     content: '';
     position: absolute;
@@ -590,4 +575,15 @@ width: 75% !important;
     background-color: #d9d9d9;
     right: -10px;
   }
+}
+
+.cover-subscribe {
+ background-color: #F4F5F6;
+}
+
+// .free-signup {
+//   width: 20%;
+// }
+.cover, .cover-text {
+  
 }
