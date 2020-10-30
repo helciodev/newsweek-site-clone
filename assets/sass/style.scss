@@ -1,0 +1,548 @@
+$bg-navbar: #f72210;
+$btn-subscribe: #ffe400;
+$body-color: #f4f5f6;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: $body-color;
+  line-height: 24px;
+}
+
+p {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 18px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 471px;
+}
+
+.info {
+  background-color: $bg-navbar;
+}
+
+// ************* header
+.header {
+  z-index: 10;
+}
+
+.newsweek-logo-fixed {
+  width: 150px;
+  height: 90px;
+}
+
+.fixed--nav {
+  display: none;
+  justify-content: space-between;
+  height: 45px;
+  background: $bg-navbar;
+}
+
+.clouds {
+  width: 24px;
+  height: 24px;
+}
+
+.weather {
+  font-size: 14px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.newsweek-logo {
+  width: 145px;
+  height: 62px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+.btn-subs {
+  background-color: $btn-subscribe;
+  outline: none;
+  height: 28px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+// hamburger rotate animation from https://jonsuh.com/hamburgers/
+.hamburger {
+  padding: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 1px $bg-navbar;
+  margin: 0;
+  overflow: visible;
+  outline: none;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 20%;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before {
+  top: -5px;
+}
+
+.hamburger-inner::after {
+  bottom: -5px;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+
+.hamburger--spin .hamburger-inner::after {
+  transition:
+    bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-box {
+  width: 21px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.division-line {
+  position: absolute;
+  height: 2px;
+  background: #f4f5f6;
+  width: 100%;
+  top: 100px;
+}
+
+.navbar-side {
+  z-index: 1000000;
+}
+
+.navbar-side .nav-link {
+  font-size: 19px;
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar-side .nav-item {
+  position: relative;
+}
+
+.navbar-side .nav-item:hover {
+  background-color: #000;
+}
+
+.navbar-side .nav-item:hover > .nav-link {
+  color: #fff;
+}
+
+.navbar-side .nav-item:hover > .nav-item::before {
+  background: $bg-navbar;
+  width: 10px;
+  height: 10px;
+}
+
+.card {
+  border-style: none;
+}
+
+.section-name {
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+.image-holder {
+  position: relative;
+}
+
+.category {
+  display: inline-block;
+  color: $bg-navbar;
+  background-color: rgba($color: #fff, $alpha: 0.89);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card-title,
+.debate-theme {
+  color: #000;
+  cursor: pointer;
+}
+
+.card-title:hover,
+.debate-theme:hover {
+  text-decoration: underline $bg-navbar;
+}
+
+// debate
+.debate-d-line {
+  height: 4px;
+  background: #d9d9d9;
+  width: 100%;
+}
+
+.debater-img {
+  width: 63px;
+  height: 63px;
+}
+
+.vs {
+  z-index: 4;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.vs-line {
+  position: relative;
+  background-color: #d9d9d9;
+  height: 1px;
+  width: 100%;
+  top: 18px;
+}
+
+.vs-line::before {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(50% - 2px);
+  z-index: 1;
+  width: 100%;
+}
+
+.more-story img {
+  width: 95px;
+  height: 95px;
+}
+
+.topic img,
+.topic h3,
+.travel-img-title {
+  cursor: pointer;
+}
+
+.travel-img-title {
+  left: 0;
+  bottom: 0;
+  background: #c2d4d7;
+}
+
+.form .btn,
+.big-n {
+  background-color: $bg-navbar;
+}
+
+.features-see {
+  cursor: pointer;
+
+  &:hover {
+    background: #dbdcdd;
+  }
+}
+
+.red-color {
+  color: $bg-navbar;
+}
+
+.focus-t {
+  bottom: 0;
+  left: 0;
+  background: $bg-navbar;
+}
+
+// editors secondary
+
+.secondary-item-title {
+  color: $bg-navbar;
+}
+
+// subscribe
+
+.current-cover {
+  margin-left: -6rem;
+}
+
+.text-abs-md {
+  top: 190px;
+  color: #000;
+  font-size: 16px;
+}
+
+.subs-benef p {
+  font-size: 1.05rem;
+}
+
+.subs-benef > :first-child {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.subs-btn {
+  background: $bg-navbar;
+}
+
+// newsletter
+.previous-current {
+  background-color: $body-color;
+}
+
+.newsletter-bg {
+  height: 170px;
+  background: #333 url(../images/newsletter-bg.png);
+  background-size: cover;
+}
+
+// footer
+
+.logo-footer {
+  width: 17rem;
+  height: 3rem;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+// --breakpoint-xs: 0;
+// --breakpoint-sm: 576px;
+// --breakpoint-md: 768px;
+// --breakpoint-lg: 992px;
+// --breakpoint-xl: 1200px;
+
+.footer {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+// small
+@media (min-width: 320px) {
+  .tablet {
+    display: none;
+  }
+}
+
+// media tablet
+@media (min-width: 768px) {
+  .navbar-side .nav-item:hover {
+    background-color: transparent;
+  }
+
+  .nav-bottom .nav-link:hover {
+    color: $bg-navbar;
+  }
+
+  .navbar-side .nav-item:hover > .nav-link {
+    color: $bg-navbar;
+  }
+
+  .navbar-side .nav-item:not(:first-of-type)::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    height: 18px;
+    width: 1px;
+    background-color: #d9d9d9;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 448px;
+  }
+
+  .newsletter-element {
+    height: 172px;
+  }
+
+  .text-abs-md {
+    font-size: 20px;
+    top: 70px;
+    right: 34px;
+  }
+
+  .signup {
+    width: 308px;
+  }
+
+  .inMagazineImg {
+    height: 153px;
+  }
+
+  .inThemagazinetitle {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1240px) {
+  body {
+    overflow-x: hidden;
+    width: 1305px;
+  }
+
+  .navbar-side {
+    width: 99%;
+    position: absolute;
+    top: 100px;
+    clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
+    background-color: #fff;
+    left: 0;
+  }
+
+  .info {
+    height: 110px;
+  }
+
+  .newsweek-logo {
+    width: 393px;
+    height: 90px;
+  }
+
+  .search-icon {
+    background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
+    width: 20px;
+    height: 20px;
+    clip: auto;
+    font-size: 0;
+    position: absolute;
+    right: 88px;
+    top: 12px;
+  }
+
+  .input-search {
+    font-size: 1rem;
+    width: 32%;
+  }
+
+  .input-search:focus {
+    outline: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .newsletter-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .large-display {
+    width: 97%;
+  }
+
+  .signup {
+    width: 330px;
+  }
+
+  .inMagazineImg {
+    height: 283px;
+  }
+
+  .inThemagazinetitle {
+    font-size: 18px;
+  }
+
+  .footer-link:last-child::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    height: 14px;
+    width: 1px;
+    background-color: #d9d9d9;
+    right: -10px;
+  }
+}
+
+.cover-subscribe {
+  background-color: #f4f5f6;
+}
