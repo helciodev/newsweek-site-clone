@@ -498,7 +498,7 @@ p {
   .navbar-side {
     width: 99%;
     position: absolute;
-    top: 150px;
+    top: 100px;
     -webkit-clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 99% 0, 100% 44%, 100% 100%, 0% 100%);
     background-color: #fff;
