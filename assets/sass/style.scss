@@ -45,7 +45,7 @@ p {
   display: none;
   justify-content: space-between;
   height: 45px;
-  background: $bg-navbar !important;
+  background: $bg-navbar;
 }
 
 .clouds {
@@ -391,33 +391,10 @@ p {
   height: 3rem;
 }
 
-.social-footer .facebook:hover {
-  color: #3b5998 !important;
-}
-
-.footer-links > *:not(:last-child) {
-  margin-right: 20px;
-}
-
-.social-footer .twitter:hover {
-  color: #1da1f2 !important;
-}
-
 .bg-red {
   background-color: red;
 }
 
-.social-footer .instagram:hover {
-  color: #405de6 !important;
-}
-
-.social-footer .tumblr:hover {
-  color: #3592d5 !important;
-}
-
-.social-footer .linkedin:hover {
-  color: #0077b5 !important;
-}
 
 // --breakpoint-xs: 0;
 // --breakpoint-sm: 576px;
@@ -444,7 +421,7 @@ p {
   }
 
   .nav-bottom .nav-link:hover {
-    color: $bg-navbar !important;
+    color: $bg-navbar;
   }
 
   .navbar-side .nav-item:hover > .nav-link {
@@ -470,14 +447,9 @@ p {
     height: 172px;
   }
 
-  .main {
-    margin-top: -4rem !important;
-  }
-
   .text-abs-md {
     font-size: 20px;
     top: 70px;
-    width: 50% !important;
     right: 34px;
   }
 
