@@ -55,7 +55,7 @@ To get a local copy of this repository up and running follow these simple steps:
 ### Install
 
 - Go to your preferred directory
-- Run git clone git@github.com:ArreyTabe/The-Next-Web-Clone.git command
+- Run git `clone git@github.com:helciodev/newsweek-site-clone.git`
 
 ### Usage
 
